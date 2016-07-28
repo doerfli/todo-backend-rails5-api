@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample implementation for Todo-Backend (http://www.todobackend.com) using Rails 5 api only mode and mongoid backend
 
-Things you may want to cover:
+**Important**: Set env variable `DB_HOST` to address:port of your mongo db host (e.g. `192.168.99.100:32768`)
 
-* Ruby version
+**Known issues**
 
-* System dependencies
+* Does not work in production mode (needs CORS config).
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
