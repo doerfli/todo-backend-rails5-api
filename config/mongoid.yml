@@ -147,10 +147,10 @@ test:
 production:
   clients:
     default:
-      database: todo_prod
-      hosts:
-        - <%= ENV['DB_HOST'] || 'mongo:27017' %>
-      options:
-        read:
-          mode: :primary
-        max_pool_size: 1
+      uri: <%= ENV['MONGODB_URI'] %>
+    options:
+      # The default timeout is 5, which is the time in seconds
+      # for a connection to time out.
+      # We recommend 15 because it allows for plenty of time
+      # in most operating environments.
+      connect_timeout: 15
