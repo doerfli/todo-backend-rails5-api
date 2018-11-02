@@ -11,7 +11,7 @@ development:
       hosts:
         #- localhost:27017
         #- 192.168.99.100:32768
-        - <%= ENV['DB_HOST'] || 'localhost:32768' %>
+        - <%= ENV['DB_HOST'] || 'localhost:27017' %>
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
