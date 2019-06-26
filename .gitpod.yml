@@ -1,0 +1,5 @@
+image: gitpod/workspace-mongodb
+ports:
+- port: 3000
+tasks:
+- command: bundle install
